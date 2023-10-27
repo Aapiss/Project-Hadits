@@ -12,7 +12,7 @@ function getListHadits() {
         </div>
         <h2>${h.name}</h2>
         <p>Total Hadith : <b>${h.available}</b></p>
-        <a class="btn btn-info w-75" href="/page/${h.id}.html" 
+        <a class="btn btn-info w-75" href="./page/${h.id}.html" 
         target="_blank">Read Hadits</a>
         </div>`;
       })
