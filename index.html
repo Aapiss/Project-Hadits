@@ -1,40 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MyHadits</title>
-    <link rel="stylesheet" href="./styles/styles.css" />
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-  <body>
-    <header class="py-3 px-4 fixed-top bg-dark">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a class="navbar-brand fw-bold fs-4 text-white" href="#">
-            <i class="ic fa-solid fa-book-quran"></i>
-            MyHadits
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarTogglerDemo02"
-            aria-controls="navbarTogglerDemo02"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MyHadits</title>
+  <link rel="stylesheet" href="./styles/styles.css" />
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body id="dark-mode">
+  <header class="py-3 px-4 fixed-top bg-dark">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold fs-4 text-white" href="#">
+          <i class="ic fa-solid fa-book-quran"></i>
+          MyHadits
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <form class="d-flex ms-auto" role="search">
               <input
                 class="form-control me-2"
@@ -49,77 +40,80 @@
                 My Hadits<i class="fa-solid fa-book-bookmark ms-2"></i>
               </button>
             </form>
-          </div>
-        </div>
-      </nav>
-    </header>
+          </div> -->
+        <button id="btn-dark-mode">Dark Mode</button>
+      </div>
+    </nav>
+  </header>
 
-    <main>
-      <section>
-        <div
-          class="home vh-100 w-100 d-flex flex-column justify-content-center align-items-center text-white"
-        >
-          <h1 class="text-center">
-            We Provide a Collection of Hadiths of The Rasulullah
-          </h1>
-          <p class="text-center px-5">
-            Hadith is a report of the sayings and actions of Prophet Muhammad, in addition to the Quran. It is classified based on its authenticity, with Sahih (authentic) hadiths being the most reliable. Hadiths aid in understanding and practicing the teachings of Islam.
-          </p>
-        </div>
-      </section>
-    </main>
-
-    <section class="w-100 bg-info-subtle p-4">
-      <h2>About This Web</h2>
-      <p>A hadith is a report concerning the sayings, actions, or approvals of Prophet Muhammad, which serves as a source of teachings and guidance in Islam, alongside the Quran. Hadiths are classified as sahih (authentic), hasan (good), da'if (weak), or mawdu' (fabricated). Sahih hadiths are the most reliable and are used to interpret the Quran and provide guidance in religious practices. Hadiths are a key element in understanding and practicing the religion of Islam.</p>
-    </section>
-
-    <section class="py-2 px-4">
-      <h2>Daily Hadits</h2>
-      <div id="output"></div>
-    </section>
-
-    <footer class="mt-2">
-      <div
-        class="
-        footer-content bg-dark w-100 h-auto p-3 text-white pt-5 d-flex align-items-center justify-content-center
-        text-center flex-column"
-      >
-        <h3>MyHadits</h3>
-        <p class="w-50">
-          Hadith is a report of the sayings and actions of Prophet Muhammad, in addition to the Quran. It is classified based on its authenticity, with Sahih (authentic) hadiths being the most reliable. Hadiths aid in understanding and practicing the teachings of Islam.
+  <main>
+    <section>
+      <div class="home vh-100 w-100 d-flex flex-column justify-content-center align-items-center text-white">
+        <h1 class="text-center">
+          We Provide a Collection of Hadiths of The Rasulullah
+        </h1>
+        <p class="text-center px-5">
+          Hadith is a report of the sayings and actions of Prophet Muhammad, in addition to the Quran. It is classified
+          based on its authenticity, with Sahih (authentic) hadiths being the most reliable. Hadiths aid in
+          understanding and practicing the teachings of Islam.
         </p>
-        <ul class="social-media">
-          <li>
-            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-brands fa-github"></i></a>
-          </li>
-        </ul>
       </div>
+    </section>
+  </main>
 
-      <div class="footer-bottom bg-black w-100 text-center text-white justify-content-center">
-        <p>Created by Muhammad Hafidz</p>
-      </div>
-    </footer>
+  <section class="section-about w-100 bg-info-subtle p-4">
+    <h2>About This Web</h2>
+    <p>A hadith is a report concerning the sayings, actions, or approvals of Prophet Muhammad, which serves as a source
+      of teachings and guidance in Islam, alongside the Quran. Hadiths are classified as sahih (authentic), hasan
+      (good), da'if (weak), or mawdu' (fabricated). Sahih hadiths are the most reliable and are used to interpret the
+      Quran and provide guidance in religious practices. Hadiths are a key element in understanding and practicing the
+      religion of Islam.</p>
+  </section>
 
-    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js"
-      integrity="sha512-emSwuKiMyYedRwflbZB2ghzX8Cw8fmNVgZ6yQNNXXagFzFOaQmbvQ1vmDkddHjm5AITcBIZfC7k4ShQSjgPAmQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="main.js"></script>
-    <script>
-      getListHadits();
-    </script>
-  </body>
+  <section class="py-2 px-4">
+    <h2>Daily Hadits</h2>
+    <div id="output"></div>
+  </section>
+
+  <footer class="mt-2">
+    <div class="
+        footer-content bg-dark w-100 h-auto p-3 text-white pt-5 d-flex align-items-center justify-content-center
+        text-center flex-column">
+      <h3>MyHadits</h3>
+      <p class="w-50">
+        Hadith is a report of the sayings and actions of Prophet Muhammad, in addition to the Quran. It is classified
+        based on its authenticity, with Sahih (authentic) hadiths being the most reliable. Hadiths aid in understanding
+        and practicing the teachings of Islam.
+      </p>
+      <ul class="social-media">
+        <li>
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-github"></i></a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer-bottom bg-black w-100 text-center text-white justify-content-center">
+      <p>Created by Muhammad Hafidz</p>
+    </div>
+  </footer>
+
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js"
+    integrity="sha512-emSwuKiMyYedRwflbZB2ghzX8Cw8fmNVgZ6yQNNXXagFzFOaQmbvQ1vmDkddHjm5AITcBIZfC7k4ShQSjgPAmQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="main.js"></script>
+  <script>
+    getListHadits();
+  </script>
+</body>
+
 </html>

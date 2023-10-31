@@ -86,3 +86,26 @@ footer {
 .social-media a:hover i {
     color: #6499E9;
 }
+.dark-theme{
+    background: black;
+    color: #fff;
+}
+.dark-theme a,
+.dark-theme a:hover{
+    color: #fff;
+}
+.dark-theme .card-hadits{
+    background-color: #ffffff25;
+}
+.dark-theme h2,
+.dark-theme p {
+    color: #fff;
+}
+.dark-theme .card-hadits h2,
+.dark-theme .card-hadits p{
+    color: #fff;
+}
+.dark-theme .section-about {
+    background-color: #ffffff25 !important;
+}
+
